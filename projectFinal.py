@@ -572,11 +572,5 @@ if __name__ == '__main__':
     net = MainTeam.moneyearned  # net transfer result
     remaining = MainTeam.budget + net  # budget left after transfers
 
-    # Net result after season
-    if net >= 0:
-        print(f'You earned the club an additional ${net:,.0f}')
-    else:
-        print(f'You cost the club ${abs(net):,.0f}')
-
     # Remaining budget
     print(f'Remaining transfer budget: ${remaining:,.0f}')
